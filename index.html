@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>My Website</title>
 </head>
+
 <body>
     <header class="site-header">
         <div class="container">
@@ -27,5 +25,84 @@
             </div>
         </section>
     </main>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="block christmas-tree">
+                <h2>Block 1</h2>
+                <p>This is the first block of content.</p>
+                <div class="container">
+                    <h3>Merry Christmas!</h3>
+                    <div class="tree-wrapper">
+                        <div class="tree">
+                            <div class="branch branch-1"></div>
+                            <div class="branch branch-2"></div>
+                            <div class="branch branch-3"></div>
+                            <div class="branch branch-4"></div>
+                            <div class="branch branch-5"></div>
+                            <div class="trunk"></div>
+                        </div>
+                        <div class="star"></div>
+                        <div class="lights">
+                            <div class="light light-1"></div>
+                            <div class="light light-2"></div>
+                            <div class="light light-3"></div>
+                            <div class="light light-4"></div>
+                            <div class="light light-5"></div>
+                            <div class="light light-6"></div>
+                            <div class="light light-7"></div>
+                            <div class="light light-8"></div>
+                            <div class="light light-9"></div>
+                            <div class="light light-10"></div>
+                        </div>
+                    </div>
+                    <button class="toggle-btn" id="toggleBtn">✨</button>
+                    <div class="message">Wishing you a joyful holiday season!</div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Block 2</h2>
+                <p>This is the second block of content.</p>
+                <h2>Countdown to Release</h2>
+                      <section class="countdown">
+        <div class="time-unit">
+            <span id="days">351</span>
+            <label>Days</label>
+        </div>
+        <div class="time-unit">
+            <span id="hours">12</span>
+            <label>Hours</label>
+        </div>
+        <div class="time-unit">
+            <span id="minutes">8</span>
+            <label>Minutes</label>
+        </div>
+        <div class="time-unit">
+            <span id="seconds">89</span>
+            <label>Seconds</label>
+        </div>
+        </section>
+            </div>
+            <div class="block">
+                <h2>Block 3</h2>
+                <p>This is the third block of content.</p>
+                        <div class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div id="display">00:00:00</div>
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

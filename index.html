@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <!-- <header class="site-header">
         <div class="container">
             <h1 class="site-title">Welcome</h1>
             <p class="site-subtitle">A small demo showing a call-to-action with three buttons.</p>
@@ -23,15 +23,20 @@
                 <button class="btn btn-secondary" id="btn-features" role="tab">Features</button>
                 <button class="btn btn-primary" id="btn-boom" role="tab">Boom</button>
             </div>
-        </section>
+        </section> -->
     </main>
     <header>
         <h1>Welcome to My Website</h1>
-        <button id="theme-toggle">Toggle Theme</button>
+        <nav>
+            <button onclick="scrollToBlock('block1')">Block 1</button>
+            <button onclick="scrollToBlock('block2')">Block 2</button>
+            <button onclick="scrollToBlock('block3')">Block 3</button>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
     </header>
     <main>
         <div class="grid-container">
-            <div class="block christmas-tree">
+            <div class="block christmas-tree" id="block1">
                 <h2>Block 1</h2>
                 <p>This is the first block of content.</p>
                 <div class="container">
@@ -63,39 +68,39 @@
                     <div class="message">Wishing you a joyful holiday season!</div>
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="block2">
                 <h2>Block 2</h2>
                 <p>This is the second block of content.</p>
                 <h2>Countdown to Release</h2>
-                      <section class="countdown">
-        <div class="time-unit">
-            <span id="days">351</span>
-            <label>Days</label>
-        </div>
-        <div class="time-unit">
-            <span id="hours">12</span>
-            <label>Hours</label>
-        </div>
-        <div class="time-unit">
-            <span id="minutes">8</span>
-            <label>Minutes</label>
-        </div>
-        <div class="time-unit">
-            <span id="seconds">89</span>
-            <label>Seconds</label>
-        </div>
-        </section>
+                <section class="countdown">
+                    <div class="time-unit">
+                        <span id="days">351</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">12</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">8</span>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">89</span>
+                        <label>Seconds</label>
+                    </div>
+                </section>
             </div>
-            <div class="block">
+            <div class="block" id="block3">
                 <h2>Block 3</h2>
                 <p>This is the third block of content.</p>
-                        <div class="stopwatch">
-            <h2>Stopwatch</h2>
-            <div id="display">00:00:00</div>
-            <button onclick="start()">Start</button>
-            <button onclick="stop()">Stop</button>
-            <button onclick="reset()">Reset</button>
-        </div>
+                <div class="stopwatch">
+                    <h2>Stopwatch</h2>
+                    <div id="display">00:00:00</div>
+                    <button onclick="start()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
             </div>
         </div>
 

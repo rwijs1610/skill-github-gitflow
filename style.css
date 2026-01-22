@@ -1,3 +1,19 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --header-bg: #f8f9fa;
+    --footer-bg: #f8f9fa;
+    --block-bg: #e9ecef;
+}
+
+.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-bg: #1e1e1e;
+    --footer-bg: #1e1e1e;
+    --block-bg: #2d2d2d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -286,4 +302,91 @@ h1 {
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+#theme-toggle {
+    padding: 10px 15px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.block {
+    background-color: var(--block-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.block h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.stopwatch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.stopwatch button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--block-bg);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }

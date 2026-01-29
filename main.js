@@ -126,3 +126,16 @@ function updateTime() {
         `${String(seconds).padStart(2, "0")}:` +
         `${String(milliseconds).padStart(2, "0")}`;
 }
+
+function randomise() {
+  const items = [
+    "Apple",
+    "Banana",
+    "Orange",
+    "Grapes",
+    "Mango"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * items.length);
+  document.getElementById("result").textContent = items[randomIndex];
+}
